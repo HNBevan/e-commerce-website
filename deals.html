@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deals & Offers - ShopHub</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">ShopHub</a>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="deals.html" class="active">Deals</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search products..." id="searchInput">
+                    <button class="search-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                </div>
+                <button class="icon-btn" id="wishlistBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                    <span class="badge" id="wishlistCount">0</span>
+                </button>
+                <button class="icon-btn" id="cartBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span class="badge" id="cartCount">0</span>
+                </button>
+                <button class="icon-btn mobile-menu-btn" id="mobileMenuBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Delivery Banner -->
+    <div class="delivery-banner">
+        <div class="delivery-banner-track">
+            <span>Free Delivery on Orders Over £100</span>
+            <span>Free Delivery on Orders Over £100</span>
+            <span>Free Delivery on Orders Over £100</span>
+            <span>Free Delivery on Orders Over £100</span>
+            <span>Free Delivery on Orders Over £100</span>
+            <span>Free Delivery on Orders Over £100</span>
+        </div>
+    </div>
+
+    <!-- Deals Hero Banner -->
+    <section class="deals-hero">
+        <div class="container deals-hero-container">
+            <div class="deals-hero-content">
+                <span class="deals-tag">Limited Time Only</span>
+                <h1>Hot Deals & Offers</h1>
+                <p>Save big on our best products - up to 50% off!</p>
+                <div class="deals-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" id="totalDeals">0</span>
+                        <span class="stat-label">Products on Sale</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50%</span>
+                        <span class="stat-label">Max Discount</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">£<span id="totalSavings">0</span></span>
+                        <span class="stat-label">Total Savings</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promo Code Banner -->
+    <section class="promo-code-banner">
+        <div class="container">
+            <div class="promo-code-content">
+                <div class="promo-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="20 12 20 22 4 22 4 12"></polyline>
+                        <rect x="2" y="7" width="20" height="5"></rect>
+                        <line x1="12" y1="22" x2="12" y2="7"></line>
+                        <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path>
+                        <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>
+                    </svg>
+                </div>
+                <div class="promo-text">
+                    <h3>Extra 10% Off Your First Order!</h3>
+                    <p>Use code <strong>WELCOME10</strong> at checkout</p>
+                </div>
+                <button class="btn btn-primary" onclick="copyPromoCode()">Copy Code</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deals Products -->
+    <section class="deals-products">
+        <div class="container">
+            <div class="deals-toolbar">
+                <div class="results-count">
+                    Showing <span id="resultsCount">0</span> deals
+                </div>
+                <div class="toolbar-actions">
+                    <div class="sort-dropdown">
+                        <label>Sort by:</label>
+                        <select id="sortSelect">
+                            <option value="discount">Biggest Discount</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="rating">Top Rated</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="products-grid" id="dealsProductsGrid">
+                <!-- Products loaded by JavaScript -->
+            </div>
+
+            <div class="deals-empty" id="dealsEmpty" style="display: none;">
+                <h3>No deals available</h3>
+                <p>Check back soon for new offers!</p>
+                <a href="shop.html" class="btn btn-primary">Browse All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter CTA -->
+    <section class="deals-newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Never Miss a Deal!</h2>
+                <p>Subscribe to get notified about new offers and exclusive discounts</p>
+                <form class="newsletter-form" id="dealsNewsletterForm">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3 class="logo">ShopHub</h3>
+                    <p>Your one-stop destination for quality products at great prices.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info">
+                        <li>123 Shop Street</li>
+                        <li>London, UK</li>
+                        <li>support@shophub.com</li>
+                        <li>0800-SHOP-HUB</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ShopHub. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-btn" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">£0.00</span>
+            </div>
+            <a href="checkout.html" class="btn btn-primary btn-full">Checkout</a>
+        </div>
+    </div>
+
+    <!-- Favourites Sidebar -->
+    <div class="favourites-sidebar" id="favouritesSidebar">
+        <div class="favourites-header">
+            <h3>Your Favourites</h3>
+            <button class="close-btn" id="closeFavourites">&times;</button>
+        </div>
+        <div class="favourites-items" id="favouritesItems">
+            <p class="empty-favourites">Your favourites list is empty</p>
+        </div>
+        <div class="favourites-footer">
+            <button class="btn btn-primary btn-full" id="addAllToCartBtn">Add All to Cart</button>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <script src="main.js"></script>
+    <script src="js/animations.js"></script>
+    <script>
+        let dealsProducts = [];
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            // Load products
+            try {
+                const response = await fetch('data/products.json');
+                const data = await response.json();
+                // Filter products that are on sale
+                dealsProducts = data.products.filter(p => p.badge === 'sale' && p.originalPrice);
+
+                // Calculate stats
+                const totalSavings = dealsProducts.reduce((sum, p) => sum + (p.originalPrice - p.price), 0);
+                document.getElementById('totalDeals').textContent = dealsProducts.length;
+                document.getElementById('totalSavings').textContent = totalSavings.toFixed(0);
+
+                // Sort by biggest discount by default
+                dealsProducts.sort((a, b) => {
+                    const discountA = (a.originalPrice - a.price) / a.originalPrice;
+                    const discountB = (b.originalPrice - b.price) / b.originalPrice;
+                    return discountB - discountA;
+                });
+
+                renderDealsProducts(dealsProducts);
+
+                // Sort functionality
+                document.getElementById('sortSelect').addEventListener('change', (e) => {
+                    let sorted = [...dealsProducts];
+                    switch (e.target.value) {
+                        case 'discount':
+                            sorted.sort((a, b) => {
+                                const discountA = (a.originalPrice - a.price) / a.originalPrice;
+                                const discountB = (b.originalPrice - b.price) / b.originalPrice;
+                                return discountB - discountA;
+                            });
+                            break;
+                        case 'price-low':
+                            sorted.sort((a, b) => a.price - b.price);
+                            break;
+                        case 'price-high':
+                            sorted.sort((a, b) => b.price - a.price);
+                            break;
+                        case 'rating':
+                            sorted.sort((a, b) => b.rating - a.rating);
+                            break;
+                    }
+                    renderDealsProducts(sorted);
+                });
+
+            } catch (error) {
+                console.error('Error loading products:', error);
+            }
+
+            // Newsletter form
+            document.getElementById('dealsNewsletterForm').addEventListener('submit', (e) => {
+                e.preventDefault();
+                const email = e.target.querySelector('input').value;
+                showNotification(`Thank you for subscribing with ${email}!`);
+                e.target.reset();
+            });
+        });
+
+        function renderDealsProducts(products) {
+            const grid = document.getElementById('dealsProductsGrid');
+            const countEl = document.getElementById('resultsCount');
+            const emptyEl = document.getElementById('dealsEmpty');
+
+            countEl.textContent = products.length;
+
+            if (products.length === 0) {
+                grid.style.display = 'none';
+                emptyEl.style.display = 'block';
+                return;
+            }
+
+            grid.style.display = 'grid';
+            emptyEl.style.display = 'none';
+            grid.innerHTML = products.map(product => createDealCard(product)).join('');
+        }
+
+        function createDealCard(product) {
+            const discount = Math.round((1 - product.price / product.originalPrice) * 100);
+            const savings = (product.originalPrice - product.price).toFixed(2);
+            const isInWishlist = wishlist.includes(product.id);
+
+            return `
+                <div class="product-card deal-card" data-id="${product.id}">
+                    <div class="product-image">
+                        <img src="${product.image}" alt="${product.name}" loading="lazy">
+                        <span class="product-badge badge-sale">-${discount}%</span>
+                        <div class="savings-badge">Save £${savings}</div>
+                        <div class="product-actions">
+                            <button class="action-btn wishlist-btn ${isInWishlist ? 'active' : ''}"
+                                    onclick="toggleWishlist(${product.id})"
+                                    title="${isInWishlist ? 'Remove from Favourites' : 'Add to Favourites'}">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="${isInWishlist ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                </svg>
+                            </button>
+                            <button class="action-btn" onclick="window.location.href='product.html?id=${product.id}'" title="Quick View">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">${product.category}</span>
+                        <h3 class="product-name">${product.name}</h3>
+                        <div class="product-price">
+                            <span class="current-price">£${product.price.toFixed(2)}</span>
+                            <span class="original-price">£${product.originalPrice.toFixed(2)}</span>
+                        </div>
+                        <div class="product-rating">
+                            <span class="stars">${getStarsHTML(product.rating)}</span>
+                            <span class="rating-count">(${product.reviews})</span>
+                        </div>
+                        <button class="add-to-cart" onclick="addToCart(${product.id})">Add to Cart</button>
+                        <a href="product.html?id=${product.id}" class="view-product-btn">View Product</a>
+                    </div>
+                </div>
+            `;
+        }
+
+        function copyPromoCode() {
+            navigator.clipboard.writeText('WELCOME10').then(() => {
+                showNotification('Promo code WELCOME10 copied to clipboard!');
+            }).catch(() => {
+                showNotification('Code: WELCOME10');
+            });
+        }
+    </script>
+</body>
+</html>

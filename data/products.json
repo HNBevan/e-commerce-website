@@ -1,0 +1,452 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Classic White Sneakers",
+            "category": "Shoes",
+            "price": 89.99,
+            "originalPrice": 129.99,
+            "badge": "sale",
+            "rating": 4.5,
+            "reviews": 124,
+            "filter": "sale",
+            "image": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=800w=400&q=80q=85",
+            "description": "Step into timeless style with our Classic White Sneakers. Crafted from premium leather with a cushioned insole for all-day comfort. The minimalist design pairs effortlessly with any outfit, from casual jeans to smart-casual looks.",
+            "features": [
+                "Premium genuine leather upper",
+                "Cushioned memory foam insole",
+                "Durable rubber outsole",
+                "Breathable mesh lining",
+                "Available in sizes UK 6-12"
+            ],
+            "specifications": {
+                "Material": "Genuine Leather",
+                "Sole": "Rubber",
+                "Closure": "Lace-up",
+                "Care": "Wipe clean with damp cloth"
+            },
+            "stock": 45,
+            "sku": "SH-CWS-001"
+        },
+        {
+            "id": 2,
+            "name": "Leather Crossbody Bag",
+            "category": "Bags",
+            "price": 149.99,
+            "originalPrice": null,
+            "badge": "new",
+            "rating": 5,
+            "reviews": 89,
+            "filter": "new",
+            "image": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800w=400&q=80q=85",
+            "description": "Elevate your everyday carry with this elegant Leather Crossbody Bag. Handcrafted from full-grain Italian leather, featuring adjustable strap, multiple compartments, and secure magnetic closure. Perfect for work or weekend adventures.",
+            "features": [
+                "Full-grain Italian leather",
+                "Adjustable crossbody strap",
+                "Interior zip pocket",
+                "Card slots and phone pocket",
+                "Magnetic snap closure"
+            ],
+            "specifications": {
+                "Material": "Full-grain Italian Leather",
+                "Dimensions": "25cm x 18cm x 8cm",
+                "Strap Drop": "50-60cm adjustable",
+                "Hardware": "Gold-tone metal"
+            },
+            "stock": 23,
+            "sku": "BG-LCB-002"
+        },
+        {
+            "id": 3,
+            "name": "Minimalist Watch",
+            "category": "Watches",
+            "price": 199.99,
+            "originalPrice": null,
+            "badge": "bestseller",
+            "rating": 4.8,
+            "reviews": 256,
+            "filter": "bestseller",
+            "image": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800w=400&q=80q=85",
+            "description": "Make every second count with our bestselling Minimalist Watch. Japanese quartz movement ensures precision, while the sleek Scandinavian-inspired design makes a subtle statement. Water-resistant and built to last.",
+            "features": [
+                "Japanese quartz movement",
+                "Sapphire crystal glass",
+                "Genuine leather strap",
+                "Water resistant to 50m",
+                "2-year warranty"
+            ],
+            "specifications": {
+                "Case Size": "40mm",
+                "Case Thickness": "7mm",
+                "Movement": "Japanese Quartz",
+                "Water Resistance": "5 ATM"
+            },
+            "stock": 67,
+            "sku": "WT-MIN-003"
+        },
+        {
+            "id": 4,
+            "name": "Cotton Blend T-Shirt",
+            "category": "Clothing",
+            "price": 34.99,
+            "originalPrice": 49.99,
+            "badge": "sale",
+            "rating": 4.2,
+            "reviews": 178,
+            "filter": "sale",
+            "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800w=400&q=80q=85",
+            "description": "Experience ultimate comfort with our Cotton Blend T-Shirt. Made from a premium cotton-modal blend for exceptional softness. Pre-shrunk fabric maintains shape wash after wash. A wardrobe essential for any season.",
+            "features": [
+                "60% Cotton, 40% Modal blend",
+                "Pre-shrunk fabric",
+                "Reinforced seams",
+                "Tagless comfort label",
+                "Machine washable"
+            ],
+            "specifications": {
+                "Material": "Cotton-Modal Blend",
+                "Fit": "Regular fit",
+                "Neckline": "Crew neck",
+                "Care": "Machine wash cold"
+            },
+            "stock": 156,
+            "sku": "CL-CBT-004"
+        },
+        {
+            "id": 5,
+            "name": "Wireless Earbuds Pro",
+            "category": "Electronics",
+            "price": 159.99,
+            "originalPrice": null,
+            "badge": "new",
+            "rating": 4.7,
+            "reviews": 312,
+            "filter": "new",
+            "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800w=400&q=80q=85",
+            "description": "Immerse yourself in pure audio with our Wireless Earbuds Pro. Active noise cancellation blocks out distractions, while transparency mode keeps you aware. 8-hour battery life plus charging case for all-day listening.",
+            "features": [
+                "Active Noise Cancellation",
+                "Transparency mode",
+                "8-hour battery (32hr with case)",
+                "IPX4 water resistant",
+                "Touch controls"
+            ],
+            "specifications": {
+                "Driver Size": "11mm dynamic drivers",
+                "Connectivity": "Bluetooth 5.2",
+                "Charging": "USB-C, Wireless Qi",
+                "Weight": "5.4g per earbud"
+            },
+            "stock": 89,
+            "sku": "EL-WEP-005"
+        },
+        {
+            "id": 6,
+            "name": "Sunglasses Collection",
+            "category": "Accessories",
+            "price": 79.99,
+            "originalPrice": null,
+            "badge": "bestseller",
+            "rating": 4.4,
+            "reviews": 145,
+            "filter": "bestseller",
+            "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=800w=400&q=80q=85",
+            "description": "Shield your eyes in style with our bestselling Sunglasses Collection. Polarized lenses reduce glare and provide 100% UV protection. Lightweight acetate frames ensure comfort from sunrise to sunset.",
+            "features": [
+                "Polarized lenses",
+                "100% UV400 protection",
+                "Lightweight acetate frame",
+                "Spring hinges for comfort",
+                "Includes protective case"
+            ],
+            "specifications": {
+                "Lens Width": "54mm",
+                "Bridge Width": "18mm",
+                "Temple Length": "145mm",
+                "Frame Material": "Acetate"
+            },
+            "stock": 78,
+            "sku": "AC-SGL-006"
+        },
+        {
+            "id": 7,
+            "name": "Denim Jacket",
+            "category": "Clothing",
+            "price": 119.99,
+            "originalPrice": 159.99,
+            "badge": "sale",
+            "rating": 4.6,
+            "reviews": 203,
+            "filter": "sale",
+            "image": "https://images.unsplash.com/photo-1576995853123-5a10305d93c0?w=800w=400&q=80q=85",
+            "description": "A timeless wardrobe staple, our Denim Jacket is crafted from heavyweight selvedge denim. Features classic trucker styling with modern fit. Gets better with every wear as the denim develops unique fading patterns.",
+            "features": [
+                "100% Selvedge denim",
+                "Classic trucker style",
+                "Metal button closure",
+                "Two chest pockets",
+                "Adjustable waist tabs"
+            ],
+            "specifications": {
+                "Material": "14oz Selvedge Denim",
+                "Fit": "Slim fit",
+                "Closure": "Button front",
+                "Care": "Machine wash inside out"
+            },
+            "stock": 34,
+            "sku": "CL-DNJ-007"
+        },
+        {
+            "id": 8,
+            "name": "Smart Fitness Band",
+            "category": "Electronics",
+            "price": 79.99,
+            "originalPrice": null,
+            "badge": "new",
+            "rating": 4.3,
+            "reviews": 167,
+            "filter": "new",
+            "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=800w=400&q=80q=85",
+            "description": "Track your fitness journey with our Smart Fitness Band. Monitor heart rate, sleep quality, steps, and calories burned. Syncs seamlessly with your smartphone for detailed health insights and notifications.",
+            "features": [
+                "24/7 heart rate monitoring",
+                "Sleep tracking",
+                "14-day battery life",
+                "Water resistant to 50m",
+                "Multi-sport modes"
+            ],
+            "specifications": {
+                "Display": "1.1\" AMOLED",
+                "Sensors": "Heart rate, SpO2, Accelerometer",
+                "Connectivity": "Bluetooth 5.0",
+                "Compatibility": "iOS 12+, Android 7+"
+            },
+            "stock": 112,
+            "sku": "EL-SFB-008"
+        },
+        {
+            "id": 9,
+            "name": "Floral Summer Dress",
+            "category": "Clothing",
+            "price": 89.99,
+            "originalPrice": null,
+            "badge": "new",
+            "filter": "new",
+            "rating": 4.7,
+            "reviews": 92,
+            "image": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=800w=400&q=80q=85",
+            "description": "Embrace the season in our beautiful Floral Summer Dress. Lightweight viscose fabric flows effortlessly, while the flattering A-line silhouette suits every body type. Perfect for garden parties, brunches, or beach getaways.",
+            "features": [
+                "100% Viscose fabric",
+                "Flattering A-line cut",
+                "Adjustable tie waist",
+                "Side pockets",
+                "Midi length"
+            ],
+            "specifications": {
+                "Material": "Viscose",
+                "Length": "Midi (below knee)",
+                "Fit": "Regular fit, A-line",
+                "Care": "Hand wash or gentle cycle"
+            },
+            "stock": 56,
+            "sku": "CL-FSD-009"
+        },
+        {
+            "id": 10,
+            "name": "Running Shoes Pro",
+            "category": "Shoes",
+            "price": 149.99,
+            "originalPrice": 189.99,
+            "badge": "sale",
+            "filter": "sale",
+            "rating": 4.8,
+            "reviews": 287,
+            "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800w=400&q=80q=85",
+            "description": "Engineered for performance, our Running Shoes Pro feature responsive cushioning and breathable mesh uppers. Carbon fiber plate provides explosive energy return, while the grippy outsole handles any terrain.",
+            "features": [
+                "Responsive foam midsole",
+                "Carbon fiber plate",
+                "Breathable mesh upper",
+                "Reflective details",
+                "8mm heel-to-toe drop"
+            ],
+            "specifications": {
+                "Upper": "Engineered mesh",
+                "Midsole": "ZoomX foam + Carbon plate",
+                "Outsole": "High-abrasion rubber",
+                "Weight": "245g (UK 9)"
+            },
+            "stock": 41,
+            "sku": "SH-RSP-010"
+        },
+        {
+            "id": 11,
+            "name": "Leather Wallet",
+            "category": "Accessories",
+            "price": 59.99,
+            "originalPrice": null,
+            "badge": null,
+            "filter": "all",
+            "rating": 4.5,
+            "reviews": 156,
+            "image": "https://images.unsplash.com/photo-1627123424574-724758594e93?w=800w=400&q=80q=85",
+            "description": "Sleek and sophisticated, our Leather Wallet is crafted from vegetable-tanned leather that develops a beautiful patina over time. Features RFID blocking technology to protect your cards from digital theft.",
+            "features": [
+                "Vegetable-tanned leather",
+                "RFID blocking",
+                "8 card slots",
+                "2 note compartments",
+                "Slim profile design"
+            ],
+            "specifications": {
+                "Material": "Vegetable-tanned cowhide",
+                "Dimensions": "11cm x 9cm x 1.5cm",
+                "Card Capacity": "8 cards",
+                "Security": "RFID blocking"
+            },
+            "stock": 89,
+            "sku": "AC-LWL-011"
+        },
+        {
+            "id": 12,
+            "name": "Bluetooth Speaker",
+            "category": "Electronics",
+            "price": 129.99,
+            "originalPrice": null,
+            "badge": "bestseller",
+            "filter": "bestseller",
+            "rating": 4.6,
+            "reviews": 234,
+            "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=800w=400&q=80q=85",
+            "description": "Take your music anywhere with our portable Bluetooth Speaker. Powerful 360-degree sound fills any space, while the rugged waterproof design handles pool parties, beach trips, and camping adventures.",
+            "features": [
+                "360-degree immersive sound",
+                "IPX7 waterproof",
+                "20-hour battery life",
+                "Built-in microphone",
+                "Pair two for stereo"
+            ],
+            "specifications": {
+                "Output": "20W (2 x 10W drivers)",
+                "Frequency Response": "60Hz - 20kHz",
+                "Connectivity": "Bluetooth 5.0, AUX",
+                "Dimensions": "18cm x 7cm x 7cm"
+            },
+            "stock": 67,
+            "sku": "EL-BTS-012"
+        },
+        {
+            "id": 13,
+            "name": "Canvas Tote Bag",
+            "category": "Bags",
+            "price": 45.99,
+            "originalPrice": null,
+            "badge": null,
+            "filter": "all",
+            "rating": 4.3,
+            "reviews": 78,
+            "image": "https://images.unsplash.com/photo-1544816155-12df9643f363?w=800w=400&q=80q=85",
+            "description": "Our eco-friendly Canvas Tote Bag is perfect for shopping, beach days, or everyday use. Made from heavyweight organic cotton canvas with reinforced handles. Spacious interior fits laptops, books, and daily essentials.",
+            "features": [
+                "100% Organic cotton canvas",
+                "Reinforced handles",
+                "Interior zip pocket",
+                "Magnetic snap closure",
+                "Machine washable"
+            ],
+            "specifications": {
+                "Material": "16oz Organic Cotton Canvas",
+                "Dimensions": "40cm x 35cm x 12cm",
+                "Handle Drop": "25cm",
+                "Capacity": "15 litres"
+            },
+            "stock": 134,
+            "sku": "BG-CTB-013"
+        },
+        {
+            "id": 14,
+            "name": "Gold Chain Necklace",
+            "category": "Accessories",
+            "price": 89.99,
+            "originalPrice": 119.99,
+            "badge": "sale",
+            "filter": "sale",
+            "rating": 4.7,
+            "reviews": 112,
+            "image": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800w=400&q=80q=85",
+            "description": "Add a touch of elegance with our Gold Chain Necklace. 18k gold-plated over sterling silver ensures lasting shine. The classic curb chain design transitions effortlessly from day to night.",
+            "features": [
+                "18k gold plated",
+                "Sterling silver base",
+                "Tarnish-resistant finish",
+                "Adjustable length",
+                "Lobster claw clasp"
+            ],
+            "specifications": {
+                "Material": "18k Gold over Sterling Silver",
+                "Chain Style": "Curb link",
+                "Length": "45-50cm adjustable",
+                "Width": "3mm"
+            },
+            "stock": 45,
+            "sku": "AC-GCN-014"
+        },
+        {
+            "id": 15,
+            "name": "Wool Blend Coat",
+            "category": "Clothing",
+            "price": 199.99,
+            "originalPrice": null,
+            "badge": "new",
+            "filter": "new",
+            "rating": 4.9,
+            "reviews": 67,
+            "image": "https://images.unsplash.com/photo-1539533018447-63fcce2678e3?w=800w=400&q=80q=85",
+            "description": "Stay warm in style with our luxurious Wool Blend Coat. Italian wool blend fabric provides exceptional warmth without bulk. Clean lines and impeccable tailoring make this coat a sophisticated choice for any occasion.",
+            "features": [
+                "70% Wool, 30% Cashmere blend",
+                "Fully lined interior",
+                "Notched lapel collar",
+                "Hidden button closure",
+                "Two front pockets"
+            ],
+            "specifications": {
+                "Material": "Wool-Cashmere blend",
+                "Lining": "100% Viscose",
+                "Fit": "Tailored fit",
+                "Length": "Mid-thigh"
+            },
+            "stock": 28,
+            "sku": "CL-WBC-015"
+        },
+        {
+            "id": 16,
+            "name": "Smart Watch Series X",
+            "category": "Watches",
+            "price": 299.99,
+            "originalPrice": 349.99,
+            "badge": "sale",
+            "filter": "sale",
+            "rating": 4.8,
+            "reviews": 445,
+            "image": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800w=400&q=80q=85",
+            "description": "The ultimate smartwatch for the modern lifestyle. Always-on Retina display, advanced health monitoring, and seamless connectivity keep you informed and motivated. Water resistant for swimming and workouts.",
+            "features": [
+                "Always-on Retina display",
+                "ECG and blood oxygen monitoring",
+                "GPS and cellular connectivity",
+                "Water resistant to 50m",
+                "18-hour battery life"
+            ],
+            "specifications": {
+                "Display": "1.9\" OLED Retina",
+                "Processor": "S8 SiP",
+                "Storage": "32GB",
+                "Connectivity": "GPS, LTE, WiFi, Bluetooth"
+            },
+            "stock": 52,
+            "sku": "WT-SWX-016"
+        }
+    ]
+}

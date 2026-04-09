@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product - ShopHub</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">ShopHub</a>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="deals.html">Deals</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search products..." id="searchInput">
+                    <button class="search-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                </div>
+                <button class="icon-btn" id="wishlistBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                    <span class="badge" id="wishlistCount">0</span>
+                </button>
+                <button class="icon-btn" id="cartBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span class="badge" id="cartCount">0</span>
+                </button>
+                <button class="icon-btn mobile-menu-btn" id="mobileMenuBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Delivery Banner -->
+    <div class="delivery-banner">
+        <div class="delivery-banner-track">
+            <span>Free Delivery on Orders Over £100</span>
+            <span>Free Delivery on Orders Over £100</span>
+            <span>Free Delivery on Orders Over £100</span>
+            <span>Free Delivery on Orders Over £100</span>
+            <span>Free Delivery on Orders Over £100</span>
+            <span>Free Delivery on Orders Over £100</span>
+        </div>
+    </div>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb-section">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <a href="shop.html">Shop</a>
+                <span>/</span>
+                <span id="breadcrumbProduct">Product</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Detail -->
+    <section class="product-detail">
+        <div class="container">
+            <div class="product-detail-grid">
+                <!-- Product Images -->
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img id="mainProductImage" src="" alt="Product Image">
+                        <button class="wishlist-btn-large" id="wishlistBtnLarge" title="Add to Favourites">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="thumbnail-images" id="thumbnailImages">
+                        <!-- Thumbnails will be loaded by JS -->
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info-detail">
+                    <span class="product-badge-large" id="productBadge"></span>
+                    <h1 class="product-title" id="productTitle">Loading...</h1>
+                    <p class="product-category-detail" id="productCategory">Category</p>
+
+                    <!-- Rating -->
+                    <div class="product-rating-detail">
+                        <div class="stars-interactive" id="starsDisplay">
+                            <span class="star" data-rating="1">★</span>
+                            <span class="star" data-rating="2">★</span>
+                            <span class="star" data-rating="3">★</span>
+                            <span class="star" data-rating="4">★</span>
+                            <span class="star" data-rating="5">★</span>
+                        </div>
+                        <span class="rating-value" id="ratingValue">0.0</span>
+                        <span class="review-count" id="reviewCount">(0 reviews)</span>
+                    </div>
+
+                    <!-- Price -->
+                    <div class="product-price-detail">
+                        <span class="current-price-large" id="currentPrice">£0.00</span>
+                        <span class="original-price-large" id="originalPrice"></span>
+                        <span class="discount-badge" id="discountBadge"></span>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="product-description">
+                        <p id="productDescription">Loading description...</p>
+                    </div>
+
+                    <!-- Features -->
+                    <div class="product-features">
+                        <h3>Features</h3>
+                        <ul id="productFeatures">
+                            <!-- Features loaded by JS -->
+                        </ul>
+                    </div>
+
+                    <!-- Quantity & Add to Cart -->
+                    <div class="product-actions-detail">
+                        <div class="quantity-selector">
+                            <button class="qty-btn-large" id="qtyMinus">-</button>
+                            <input type="number" id="quantityInput" value="1" min="1">
+                            <button class="qty-btn-large" id="qtyPlus">+</button>
+                        </div>
+                        <button class="btn btn-primary btn-add-cart" id="addToCartBtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-secondary btn-wishlist" id="addToWishlistBtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                            Add to Favourites
+                        </button>
+                    </div>
+
+                    <!-- Stock Info -->
+                    <div class="stock-info">
+                        <span class="stock-status in-stock" id="stockStatus">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            In Stock
+                        </span>
+                        <span class="stock-count" id="stockCount">(0 available)</span>
+                    </div>
+
+                    <!-- Product Meta -->
+                    <div class="product-meta">
+                        <p><strong>SKU:</strong> <span id="productSku">-</span></p>
+                        <p><strong>Category:</strong> <span id="productCategoryMeta">-</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Tabs -->
+            <div class="product-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="specifications">Specifications</button>
+                    <button class="tab-btn" data-tab="reviews">Reviews</button>
+                    <button class="tab-btn" data-tab="shipping">Shipping & Returns</button>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="specifications">
+                        <table class="specs-table" id="specsTable">
+                            <!-- Specs loaded by JS -->
+                        </table>
+                    </div>
+                    <div class="tab-pane" id="reviews">
+                        <div class="reviews-summary">
+                            <div class="rating-breakdown">
+                                <div class="average-rating">
+                                    <span class="big-rating" id="avgRatingDisplay">0.0</span>
+                                    <div class="stars-display" id="avgStarsDisplay">★★★★★</div>
+                                    <span id="totalReviewsDisplay">0 reviews</span>
+                                </div>
+                                <div class="rating-bars">
+                                    <div class="rating-bar-row">
+                                        <span>5 stars</span>
+                                        <div class="bar"><div class="fill" style="width: 70%"></div></div>
+                                        <span>70%</span>
+                                    </div>
+                                    <div class="rating-bar-row">
+                                        <span>4 stars</span>
+                                        <div class="bar"><div class="fill" style="width: 20%"></div></div>
+                                        <span>20%</span>
+                                    </div>
+                                    <div class="rating-bar-row">
+                                        <span>3 stars</span>
+                                        <div class="bar"><div class="fill" style="width: 7%"></div></div>
+                                        <span>7%</span>
+                                    </div>
+                                    <div class="rating-bar-row">
+                                        <span>2 stars</span>
+                                        <div class="bar"><div class="fill" style="width: 2%"></div></div>
+                                        <span>2%</span>
+                                    </div>
+                                    <div class="rating-bar-row">
+                                        <span>1 star</span>
+                                        <div class="bar"><div class="fill" style="width: 1%"></div></div>
+                                        <span>1%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customer-reviews">
+                            <h3>Customer Reviews</h3>
+                            <div class="review-card">
+                                <div class="review-header">
+                                    <div class="reviewer-avatar">JD</div>
+                                    <div class="reviewer-info">
+                                        <strong>John D.</strong>
+                                        <span class="review-date">2 weeks ago</span>
+                                    </div>
+                                    <div class="review-rating">★★★★★</div>
+                                </div>
+                                <p class="review-text">Excellent quality! Exactly as described and arrived quickly. Would definitely recommend to others.</p>
+                            </div>
+                            <div class="review-card">
+                                <div class="review-header">
+                                    <div class="reviewer-avatar">SM</div>
+                                    <div class="reviewer-info">
+                                        <strong>Sarah M.</strong>
+                                        <span class="review-date">1 month ago</span>
+                                    </div>
+                                    <div class="review-rating">★★★★☆</div>
+                                </div>
+                                <p class="review-text">Great product overall. The quality is good and it looks exactly like the pictures. Only reason for 4 stars is shipping took a bit longer than expected.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="shipping">
+                        <div class="shipping-info">
+                            <h3>Shipping Information</h3>
+                            <ul>
+                                <li><strong>Standard Delivery:</strong> 3-5 business days - Free on orders over £50</li>
+                                <li><strong>Express Delivery:</strong> 1-2 business days - £9.99</li>
+                                <li><strong>Next Day Delivery:</strong> Order before 2pm - £14.99</li>
+                            </ul>
+                            <h3>Returns Policy</h3>
+                            <ul>
+                                <li>30-day return policy for unused items</li>
+                                <li>Free returns on all orders</li>
+                                <li>Refund processed within 5-7 business days</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related Products -->
+            <section class="related-products">
+                <h2 class="section-title">You May Also Like</h2>
+                <div class="products-grid" id="relatedProducts">
+                    <!-- Related products loaded by JS -->
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3 class="logo">ShopHub</h3>
+                    <p>Your one-stop destination for quality products at great prices.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info">
+                        <li>123 Shop Street</li>
+                        <li>New York, NY 10001</li>
+                        <li>support@shophub.com</li>
+                        <li>1-800-SHOP-HUB</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ShopHub. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-btn" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">£0.00</span>
+            </div>
+            <a href="checkout.html" class="btn btn-primary btn-full">Checkout</a>
+        </div>
+    </div>
+
+    <!-- Favourites Sidebar -->
+    <div class="favourites-sidebar" id="favouritesSidebar">
+        <div class="favourites-header">
+            <h3>Your Favourites</h3>
+            <button class="close-btn" id="closeFavourites">&times;</button>
+        </div>
+        <div class="favourites-items" id="favouritesItems">
+            <p class="empty-favourites">Your favourites list is empty</p>
+        </div>
+        <div class="favourites-footer">
+            <button class="btn btn-primary btn-full" id="addAllToCartBtn">Add All to Cart</button>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <script src="main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
