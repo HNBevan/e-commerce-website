@@ -178,7 +178,7 @@
             "rating": 4.6,
             "reviews": 203,
             "filter": "sale",
-            "image": "https://images.unsplash.com/photo-1576995853123-5a10305d93c0?w=800w=400&q=80q=85",
+            "image": "../images/denim-jacket.jpg",
             "description": "A timeless wardrobe staple, our Denim Jacket is crafted from heavyweight selvedge denim. Features classic trucker styling with modern fit. Gets better with every wear as the denim develops unique fading patterns.",
             "features": [
                 "100% Selvedge denim",
