@@ -34,6 +34,7 @@ body {
     line-height: 1.6;
     color: var(--text-dark);
     background-color: var(--bg-white);
+    overflow-x: hidden;
 }
 
 a {
@@ -4409,12 +4410,32 @@ img {
 }
 
 /* ==================== MOBILE LANDSCAPE ==================== */
-@media (orientation: landscape) and (max-height: 500px) {
 
-    /* Prevent horizontal overflow */
-    body {
-        overflow-x: hidden;
+/* Hero fix for ALL landscape orientations (covers Z Fold inner screen & all phones) */
+@media (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: 40px 20px;
     }
+
+    .hero-content {
+        padding: 30px 40px;
+        max-width: min(600px, 90vw);
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Compact layout for phones in landscape (height ≤ 500px) */
+@media (orientation: landscape) and (max-height: 500px) {
 
     /* Header — slimmer */
     .header .container {
@@ -4425,15 +4446,18 @@ img {
         font-size: 1.4rem;
     }
 
-    /* Hero — compact, no forced height */
+    /* Hero — further compact for phone landscape */
     .hero {
-        min-height: auto;
-        padding: 30px 20px;
+        padding: 20px 16px;
+    }
+
+    .hero-content {
+        padding: 20px 24px;
     }
 
     .hero-content h1 {
-        font-size: 1.5rem;
-        margin-bottom: 8px;
+        font-size: 1.4rem;
+        margin-bottom: 6px;
     }
 
     .hero-content p {
